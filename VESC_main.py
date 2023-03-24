@@ -28,6 +28,14 @@ MAX_TEMP = 50
 def index():
     return render_template('index.html')
 
+@app.route('/software_manual')
+def software_manual():
+    return render_template('softwaremanual.html')
+
+@app.route('/input_parameters')
+def input_parameters():
+    return render_template('inputparameters.html')
+
 @app.route('/duty_cycle_submit', methods=['POST'])
 def duty_cycle_submission():
     duty_cycle = request.form.get('duty_cycle')

@@ -333,9 +333,9 @@ legend {
 ol,
 ul,
 menu {
-  list-style: none;
+  list-style: list-decimal;
   margin: 0;
-  padding: 0;
+  padding: 3;
 }
 
 /*
